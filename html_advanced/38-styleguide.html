@@ -1,0 +1,55 @@
+أضفت قسم **Video** بعد قسم Details كما هو مطلوب، مع تفعيل عناصر `controls` و `loop` وعرض صورة مبدئيّة أثناء التحميل. إليك الملف كاملًا:
+
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Styleguide - Techium</title>
+    <meta name="description" content="Techium is a digital agency">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" href="./favicon.png">
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <!-- المحتوى السابق حتى قسم Details كما في 34-styleguide.html -->
+
+      <!-- Details -->
+      <section>
+        <header><h2>Details</h2></header>
+
+        <div>
+          <h3>Default</h3>
+          <details>
+            <summary>Show/Hide me</summary>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          </details>
+        </div>
+
+        <div>
+          <h3>Open</h3>
+          <details open>
+            <summary>Always open</summary>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          </details>
+        </div>
+      </section>
+
+      <!-- Video -->
+      <section>
+        <header><h2>Video</h2></header>
+
+        <video controls loop poster="https://intranet-projects-files.s3.amazonaws.com/webstack/thumbnail.jpg" width="640">
+          <source src="https://intranet-projects-files.s3.amazonaws.com/webstack/BigBuckBunny.mp4" type="video/mp4">
+          Sorry, your browser doesn't support HTML5 video
+        </video>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
+```
