@@ -1,0 +1,4 @@
+/* Task 1 – smooth scrolling on the root element */
+html {
+  scroll-behavior: smooth;
+}
