@@ -1,0 +1,58 @@
+/* Task 1 – smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  /* Task 5 – root font-size reset (10 px base) */
+  font-size: 62.5%;
+}
+
+/* Task 3 – color variables + Task 4/5 font variables */
+:root {
+  /* Color palette */
+  --color-primary:   #d73953;
+  --color-black:     #090909;
+  --color-white:     #ffffff;
+  --color-light-grey:#f3f3f3;
+  --color-dark-grey: #353535;
+
+  /* Typography families */
+  --font-family-base:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Task 5 – font-size scale */
+  --font-size-small:   1.2rem;  /* 12 px */
+  --font-size-medium:  1.6rem;  /* 16 px */
+  --font-size-large:   1.8rem;  /* 18 px */
+  --font-size-x-large: 2.3rem;  /* 23 px */
+  --font-size-xx-large:4.8rem;  /* 48 px */
+
+  /* Default text color */
+  --text-color: var(--color-black);
+}
+
+/* Base text style */
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium); /* Task 5 */
+}
+
+/* Links inherit base color */
+a {
+  color: var(--text-color);
+}
+
+/* Utility: hide element visually but keep accessible */
+.visually-hidden {
+  display: none;
+}
+
+/* Accent text */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}
+
+/* Headings use title font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
