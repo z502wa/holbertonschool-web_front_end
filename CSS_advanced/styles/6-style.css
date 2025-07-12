@@ -1,0 +1,71 @@
+```css
+/* Task 1 – smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  /* Root font-size = 10 px (62.5 %) */
+  font-size: 62.5%;
+}
+
+/* Tasks 3-6 – custom properties */
+:root {
+  /* Color palette */
+  --color-primary:   #d73953;
+  --color-black:     #090909;
+  --color-white:     #ffffff;
+  --color-light-grey:#f3f3f3;
+  --color-dark-grey: #353535;
+
+  /* Font families */
+  --font-family-base:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Font sizes */
+  --font-size-small:    1.2rem;  /* 12 px */
+  --font-size-medium:   1.6rem;  /* 16 px */
+  --font-size-large:    1.8rem;  /* 18 px */
+  --font-size-x-large:  2.3rem;  /* 23 px */
+  --font-size-xx-large: 4.8rem;  /* 48 px */
+
+  /* Font weights (Task 6) */
+  --font-weight-regular: 400;
+  --font-weight-bold:    700;
+
+  /* Default text color */
+  --text-color: var(--color-black);
+}
+
+/* ===== Base styles ===== */
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular); /* Task 6 */
+}
+
+/* Links inherit the base color */
+a {
+  color: var(--text-color);
+}
+
+/* Visually hidden (utility) */
+.visually-hidden {
+  display: none;
+}
+
+/* Accent color */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}
+
+/* Headings use title font + bold weight (Task 6) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+}
+```
