@@ -1,0 +1,42 @@
+تم إنشاء ملف **styles/3-style.css** واعتماد متغيّرات CSS (custom properties) بحيث تقلّل التكرار، مع تحديث القواعد السابقة لاستخدام هذه المتغيّرات.
+
+```css
+/* Task 1 – keep smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Task 3 – CSS custom properties */
+:root {
+  /* Color palette */
+  --color-primary:   #d73953;
+  --color-black:     #090909;
+  --color-white:     #ffffff;
+  --color-light-grey:#f3f3f3;
+  --color-dark-grey: #353535;
+
+  /* Re-usable text color */
+  --text-color: var(--color-black);
+}
+
+/* Base text color */
+body {
+  color: var(--text-color);
+}
+
+/* Anchor links inherit the same text color */
+a {
+  color: var(--text-color);
+}
+
+/* Hide any element marked as visually-hidden */
+.visually-hidden {
+  display: none;
+}
+
+/* Accent color elements */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}
+```
