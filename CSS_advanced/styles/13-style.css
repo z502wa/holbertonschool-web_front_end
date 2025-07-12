@@ -1,3 +1,6 @@
+هذه نسخة من **styles/13-style.css** بعد تعديل محددات pseudo-class لتكون بالشكل المطلوب من الاختبارات (استخدام ‎`a:visited / a:hover / a:active`‎ بدون ‎`[href]`‎)، مع الإبقاء على القاعدة الأساسية ‎`a[href]`‎ كما هي لتستهدف الروابط الحقيقية فقط.
+
+```css
 /* Task 1 – smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -54,28 +57,28 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Links (only those with href) – Task 13 */
+/* Links that actually have href (baseline rule) */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
 /* Visited state */
-a[href]:visited {
+a:visited {
   font-style: italic;
 }
 
 /* Hover state */
-a[href]:hover {
+a:hover {
   text-decoration: underline;
 }
 
 /* Active state */
-a[href]:active {
+a:active {
   background-color: var(--color-light-grey);
 }
 
-/* Visually hidden utility */
+/* Utility */
 .visually-hidden { display: none; }
 
 /* Section header alignment */
@@ -98,7 +101,7 @@ a[href]:active {
   font-weight: var(--font-weight-bold);
 }
 
-/* Accent category */
+/* Accent */
 .card-category { color: var(--color-primary); }
 
 /* Headings */
@@ -106,3 +109,4 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
+```
